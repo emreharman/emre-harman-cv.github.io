@@ -31,7 +31,6 @@ a{
 .mainContainer{
     width: 794px;
     min-height: 500px;
-    max-height: 1123px;
     margin: 50px auto;
     background-color: #fff;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.306);
