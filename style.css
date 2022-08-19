@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #ddd;
+}
+a{
+    text-decoration: none;
+}
+.mainContainer{
+    width: 794px;
+    min-height: 500px;
+    max-height: 1123px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.306);
+    padding: 30px 20px;
+}
+.header{
+    border: 1px solid;
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+
+.profileImgContainer{
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+}
+.profileImgContainer img{
+    width: 100%;
+}
+.profileInfosContainer{
+    height: 100%;
+    flex: 1;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.content {
+    width: 100%;
+    min-height: 300px;
+    margin-top: 10px;
+    display: flex;
+}
+.leftContainer{
+    width: 200px;
+    min-height: 100%;
+}
+.rightContainer{
+    background-color: aqua;
+    min-height: 300px;
+    flex: 1;
+}
+.contactContainer{
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0px;
+}
+.contactContainer i {
+    color: #333;
+}
+.contactContainer a{
+    font-size: 12px;
+    color: #333;
+}
+#linkedin{
+    color: #0072b1;
+}
+#github{
+    color: #171515;
+}
+.leftSectionTitle{
+    font-size: 16px;
+    margin: 20px 0px;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+.skillsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skillBox{
+    background-color: #aaa;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+.languagesContainer{
+    margin-bottom: 10px;
+}
+.languageTitle{
+    font-size: 16px;
+    color: #171515;
+    margin-bottom: 5px;
+}
+.languageDetail{
+    font-size: 12px;
+    color: #999;
+    padding-left: 5px;
+}
