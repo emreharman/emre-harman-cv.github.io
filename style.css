@@ -28,6 +28,30 @@ a{
 .marginTop5 {
     margin-top: 5px;
 }
+.topContainer{
+    margin: auto;
+    margin-top: 20px;
+    width: 794px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+#language{
+    padding: 0px 30px;
+    border-radius: 5px;
+}
+#pdfBtn{
+    padding: 5px 40px;
+    border: none;
+    background-color: rgb(236, 109, 109);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+#pdfBtn:hover{
+    box-shadow: 0px 0px 5px 0px gray;
+}
 .mainContainer{
     width: 794px;
     min-height: 500px;

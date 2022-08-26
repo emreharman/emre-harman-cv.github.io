@@ -13,21 +13,32 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="./dictionary.js"></script>
   </head>
   <body>
-    <div class="mainContainer">
+    <div class="topContainer">
+      <button id="pdfBtn">Export to PDF</button>
+      <select id="language">
+        <option value="tr" selected>TR</option>
+        <option value="en">EN</option>
+      </select>
+    </div>
+    <div class="mainContainer" id="myCv">
       <div class="header">
         <div class="profileImgContainer">
           <img src="./profile.png" alt="" />
         </div>
         <div class="profileInfosContainer">
-          <h1 class="nameSurname">Emre Harman</h1>
+          <h1 class="nameSurname" id="nameSurname">Ahmet Mehmet</h1>
           <h4>Frontend Developer</h4>
-          <p class="profileInfoText">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, rem
-            distinctio autem, dolorem dolor temporibus velit nostrum explicabo
-            ea quia illo error, iure facilis vel soluta voluptatem neque.
-            Repellat, veniam!
+          <p class="profileInfoText" id="personalDescription">
+            Merhaba ben Emre Harman. Frontend Developer olarak çalışıyorum
           </p>
         </div>
       </div>
@@ -69,7 +80,7 @@
             </div>
           </div>
           <!-- skills -->
-          <h3 class="leftSectionTitle">YETENEKLER</h3>
+          <h3 class="leftSectionTitle" id="skillsTitle">YETENEKLER</h3>
           <div class="skillsContainer">
             <p class="skillBox">HTML5</p>
             <p class="skillBox">CSS3</p>
@@ -92,7 +103,7 @@
         </div>
         <!-- right side -->
         <div class="rightContainer">
-          <h1 class="componentTitle marginTop10">EĞİTİM</h1>
+          <h1 class="componentTitle marginTop10" id="educationTitle">EĞİTİM</h1>
           <div class="contentComponent">
             <h2 class="componentItemTitle">Sakarya Üniversitesi</h2>
             <h3 class="componentItemSubTitle marginTop5">
@@ -102,7 +113,9 @@
             <p class="componentItemDescription marginTop5">description</p>
           </div>
           <!-- EXPERIENCES -->
-          <h1 class="componentTitle marginTop30">DENEYİM</h1>
+          <h1 class="componentTitle marginTop30" id="experienceTitle">
+            DENEYİM
+          </h1>
           <div class="contentComponent">
             <h2 class="componentItemTitle">Akinon</h2>
             <h3 class="componentItemSubTitle marginTop5">
@@ -168,5 +181,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
